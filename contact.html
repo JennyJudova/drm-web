@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - David Reznik-Martov</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%234a90e2'/></svg>">
+  <link rel="stylesheet" href="src/styles/main.css">
+  <script src="config.js"></script>
+  <script src="src/js/main.js"></script>
+  <script src="src/js/contact.js"></script>
+</head>
+<body class="light sans-serif">
+  <header>
+    <div class="therapist-name">
+      <h1>David Reznik-Martov</h1>
+      <p class="credentials" data-en="Psychotherapist, MSc, BPC" data-ru="Психотерапевт, MSc, BPC">Psychotherapist, MSc, BPC</p>
+    </div>
+    <nav class="main-nav">
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+      <div class="nav-content">
+        <div class="nav-links">
+            <a href="index.html" data-en="Home" data-ru="Главная">Home</a>
+            <a href="therapy.html" data-en="Therapy" data-ru="Терапия">Therapy</a>
+            <a href="experience.html" data-en="Experience" data-ru="Опыт">Experience</a>
+            <a href="training.html" data-en="Training" data-ru="Обучение">Training</a>
+            <a href="contact.html" class="active" data-en="Contact" data-ru="Контакты">Contact</a>
+        </div>
+        <div class="settings">
+          <button id="themeToggle" aria-label="Toggle theme">🌞</button>
+          <button id="fontToggle" aria-label="Toggle serif font">A</button>
+          <button id="langToggle" aria-label="Toggle language">EN</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="contact">
+    <div class="container">
+      <section class="contact-form-section">
+        <h2 data-en="Get in Touch" data-ru="Свяжитесь со мной">Get in Touch</h2>
+        <p class="contact-intro" data-en="I'm here to help. Please fill out the form below and I'll get back to you as soon as possible." data-ru="Я здесь, чтобы помочь. Пожалуйста, заполните форму ниже, и я свяжусь с вами в ближайшее время.">
+          I'm here to help. Please fill out the form below and I'll get back to you as soon as possible.
+        </p>
+        
+        <form id="contactForm" class="contact-form" method="POST" id="form">
+          <input type="hidden" name="access_key" value="34c53462-7f4c-41ea-ba88-ab6c8d4cbd07">
+          <div class="form-group">
+            <label for="name" data-en="Name" data-ru="Имя">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="pronouns" data-en="Pronouns" data-ru="Местоимения">Pronouns</label>
+            <input type="text" id="pronouns" name="pronouns" placeholder="e.g., she/her, they/them">
+          </div>
+
+          <div class="form-group">
+            <label for="email" data-en="Email" data-ru="Email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone" data-en="Phone Number" data-ru="Номер телефона">Phone Number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9\-\+\(\)\s]*">
+          </div>
+
+          <div class="form-group">
+            <label for="message" data-en="Message" data-ru="Сообщение">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-button" data-en="Send Message" data-ru="Отправить">
+            Send Message
+          </button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 David Reznik-Martov. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
