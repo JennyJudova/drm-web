@@ -407,7 +407,7 @@ main {
   .therapy .page-title {
     font-size: 2rem;
     margin-bottom: var(--spacing-md);
-    padding-top: var(--spacing-md);
+    /* padding-top: var(--spacing-md); */
   }
 }
 .therapy .specialties-section {
@@ -580,7 +580,7 @@ main {
   .experience .page-title {
     font-size: 2rem;
     margin-bottom: var(--spacing-md);
-    padding-top: var(--spacing-md);
+    /* padding-top: var(--spacing-md); */
   }
 }
 .experience .timeline {
@@ -657,7 +657,7 @@ main {
 @media (max-width: 768px) {
   .experience .timeline-content {
     padding: var(--spacing-sm);
-    margin-left: 0;
+    /* margin-left: 0; */
   }
   .experience .timeline-content ul {
     margin-left: 1em;
@@ -826,7 +826,7 @@ main {
   .contact h2 {
     font-size: 2rem;
     margin-bottom: var(--spacing-md);
-    padding-top: var(--spacing-md);
+    /* padding-top: var(--spacing-md); */
   }
 }
 .contact .contact-intro {

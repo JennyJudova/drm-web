@@ -693,7 +693,7 @@ main {
     color: var(--color-primary);
     margin-bottom: var(--spacing-lg);
     font-size: 2.5rem;
-    padding-top: var(--spacing-md);
+    // padding-top: var(--spacing-md);
     margin-top: 8%;
 
     @media (max-width: 768px) {
@@ -792,7 +792,7 @@ main {
 
     @media (max-width: 768px) {
       padding: var(--spacing-sm);
-      margin-left: 0;
+      // margin-left: 0;
 
       ul {
         margin-left: 1em;
