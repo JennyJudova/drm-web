@@ -22,11 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
   
       try {
         // Get access key from environment variable or use secure method
-        const accessKey = config.WEB3FORMS_ACCESS_KEY;
         
-        if (!accessKey) {
-          throw new Error('Missing API access key');
-        }
+        // if (!accessKey) {
+        //   throw new Error('Missing API access key');
+        // }
         
         const response = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
@@ -35,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'Accept': 'application/json'
           },
           body: JSON.stringify({
-            access_key: "85d38250-8eec-4fac-8ec7-8ae338f2556f",
+            access_key: "34c53462-7f4c-41ea-ba88-ab6c8d4cbd07",
             ...data,
             subject: `New contact form submission from ${data.name}`,
             from_name: 'David Reznik-Martov Website'
