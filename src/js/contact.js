@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         email: formData.get('email'),
         phone: formData.get('phone'),
         message: formData.get('message'),
-        to: 'jjudova@gmail.com'
+        to: 'reznik.martov@gmail.com'
       };
   
       // Show loading state
