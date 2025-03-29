@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'Accept': 'application/json'
           },
           body: JSON.stringify({
-            access_key: accessKey,
+            access_key: "85d38250-8eec-4fac-8ec7-8ae338f2556f",
             ...data,
             subject: `New contact form submission from ${data.name}`,
             from_name: 'David Reznik-Martov Website'
