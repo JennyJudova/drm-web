@@ -499,7 +499,8 @@ main {
       margin-bottom: var(--spacing-md);
       
       .therapy-logo {
-        max-height: 60px;
+        max-height: 100px;
+        padding-bottom: 10%;
         width: auto;
         opacity: 0.85;
         transition: var(--transition);
