@@ -20,7 +20,11 @@ fontToggle.addEventListener('click', () => {
 
 // Language toggle
 const langToggle = document.getElementById('langToggle');
-let currentLang = 'en';
+let currentLang = localStorage.getItem('lang') || 'en';
+
+// Set initial language state
+langToggle.textContent = currentLang.toUpperCase();
+updateLanguage();
 
 langToggle.addEventListener('click', () => {
   currentLang = currentLang === 'en' ? 'ru' : 'en';
@@ -71,14 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (savedFont === 'serif') {
     body.classList.add('serif');
     fontToggle.textContent = 'S';
-  }
-
-  // Language
-  const savedLang = localStorage.getItem('lang');
-  if (savedLang) {
-    currentLang = savedLang;
-    langToggle.textContent = currentLang.toUpperCase();
-    updateLanguage();
   }
 
   // Initialize menu button state
