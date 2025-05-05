@@ -114,7 +114,7 @@ The website follows WCAG guidelines with:
 
 ## License
 
-All rights reserved. © 2024 David Reznik-Martov
+All rights reserved. © 2025 David Reznik-Martov
 
 ## Contact
 
