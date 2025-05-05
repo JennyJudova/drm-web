@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://davidreznikmartov.com/sitemap.xml 
